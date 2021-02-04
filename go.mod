@@ -10,6 +10,7 @@ require (
 	github.com/go-resty/resty/v2 v2.4.0
 	github.com/gonutz/w32 v1.0.1-0.20201105145118-e88c649a9470
 	github.com/iamacarpet/go-win64api v0.0.0-20200715182619-8cbc936e1a5a
+	github.com/josephspurrier/goversioninfo v1.2.0 // indirect
 	github.com/nats-io/nats.go v1.10.1-0.20201021145452-94be476ad6e0
 	github.com/rickb777/date v1.15.3 // indirect
 	github.com/shirou/gopsutil/v3 v3.20.12

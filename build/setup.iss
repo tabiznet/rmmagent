@@ -23,8 +23,8 @@ DisableDirPage=yes
 SetupLogging=yes
 DisableProgramGroupPage=yes
 OutputBaseFilename=winagent-v{#MyAppVersion}
-SetupIconFile=C:\Users\Public\Documents\rmmagent\build\onit.ico
-WizardSmallImageFile=C:\Users\Public\Documents\rmmagent\build\onit.bmp
+SetupIconFile=C:\Users\tim\Documents\GitHub\rmmagent\build\onit.ico
+WizardSmallImageFile=C:\Users\tim\Documents\GitHub\rmmagent\build\onit.bmp
 UninstallDisplayIcon={app}\{#MyAppExeName}
 Compression=lzma
 SolidCompression=yes
@@ -40,8 +40,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Public\Documents\rmmagent\tacticalrmm.exe"; DestDir: "{app}"; Flags: ignoreversion;
-Source: "C:\Users\Public\Documents\rmmagent\build\nssm.exe"; DestDir: "{app}"
+Source: "C:\Users\tim\Documents\GitHub\rmmagent\tacticalrmm.exe"; DestDir: "{app}"; Flags: ignoreversion;
+Source: "C:\Users\tim\Documents\GitHub\rmmagent\build\nssm.exe"; DestDir: "{app}"
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
