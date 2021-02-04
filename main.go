@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	version = "1.4.3"
+	version = "1.0.0"
 	log     = logrus.New()
 	logFile *os.File
 )
@@ -133,7 +133,7 @@ func setupLogging(level, to *string) {
 	} else {
 		switch runtime.GOOS {
 		case "windows":
-			logFile, _ = os.OpenFile(filepath.Join(os.Getenv("ProgramFiles"), "TacticalAgent", "agent.log"), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0664)
+			logFile, _ = os.OpenFile(filepath.Join(os.Getenv("ProgramFiles"), "TABAgent", "agent.log"), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0664)
 		case "linux":
 			// todo
 		}

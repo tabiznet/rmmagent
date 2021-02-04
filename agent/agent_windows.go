@@ -651,9 +651,9 @@ func ShowStatus(version string) {
 		}
 		var handle w32.HWND
 		msg := fmt.Sprintf("Agent: %s\n\nRPC Service: %s\n\nMesh Agent: %s", statusMap["tacticalagent"], statusMap["tacticalrpc"], statusMap["mesh agent"])
-		w32.MessageBox(handle, msg, fmt.Sprintf("Tactical RMM v%s", version), w32.MB_OK|w32.MB_ICONINFORMATION)
+		w32.MessageBox(handle, msg, fmt.Sprintf("TAB RMM v%s", version), w32.MB_OK|w32.MB_ICONINFORMATION)
 	} else {
-		fmt.Println("Tactical RMM Version", version)
+		fmt.Println("TAB RMM Version", version)
 		fmt.Println("Agent:", statusMap["tacticalagent"])
 		fmt.Println("RPC Service:", statusMap["tacticalrpc"])
 		fmt.Println("Mesh Agent:", statusMap["mesh agent"])
@@ -677,7 +677,7 @@ func (a *WindowsAgent) installerMsg(msg, alert string, silent bool) {
 			flags = w32.MB_OK | w32.MB_ICONINFORMATION
 		}
 
-		w32.MessageBox(handle, msg, "Tactical RMM", flags)
+		w32.MessageBox(handle, msg, "TAB RMM", flags)
 	} else {
 		fmt.Println(msg)
 	}

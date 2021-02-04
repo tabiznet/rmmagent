@@ -284,14 +284,14 @@ func (a *WindowsAgent) Install(i *Installer) {
 	svcCommands := [10][]string{
 		// tacticalrpc
 		{"install", "tacticalrpc", a.EXE, "-m", "rpc"},
-		{"set", "tacticalrpc", "DisplayName", "Tactical RMM RPC Service"},
-		{"set", "tacticalrpc", "Description", "Tactical RMM RPC Service"},
+		{"set", "tacticalrpc", "DisplayName", "TAB RMM RPC Service"},
+		{"set", "tacticalrpc", "Description", "TAB RMM RPC Service"},
 		{"set", "tacticalrpc", "AppRestartDelay", "5000"},
 		{"start", "tacticalrpc"},
 		// winagentsvc
 		{"install", "tacticalagent", a.EXE, "-m", "winagentsvc"},
-		{"set", "tacticalagent", "DisplayName", "Tactical RMM Agent"},
-		{"set", "tacticalagent", "Description", "Tactical RMM Agent"},
+		{"set", "tacticalagent", "DisplayName", "TAB RMM Agent"},
+		{"set", "tacticalagent", "Description", "TAB RMM Agent"},
 		{"set", "tacticalagent", "AppRestartDelay", "5000"},
 		{"start", "tacticalagent"},
 	}
@@ -359,7 +359,7 @@ func (a *WindowsAgent) checkExistingAndRemove(silent bool) {
 		if !silent && window != 0 {
 			var handle w32.HWND
 			msg := "Existing installation found\nClick OK to remove, then re-run the installer.\nClick Cancel to abort."
-			action := w32.MessageBox(handle, msg, "Tactical RMM", w32.MB_OKCANCEL|w32.MB_ICONWARNING)
+			action := w32.MessageBox(handle, msg, "TAB RMM", w32.MB_OKCANCEL|w32.MB_ICONWARNING)
 			if action == w32.IDOK {
 				a.AgentUninstall()
 			}

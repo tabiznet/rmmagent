@@ -2,14 +2,14 @@
     "FixedFileInfo": {
         "FileVersion": {
             "Major": 1,
-            "Minor": 4,
-            "Patch": 3,
+            "Minor": 0,
+            "Patch": 0,
             "Build": 0
         },
         "ProductVersion": {
             "Major": 1,
-            "Minor": 4,
-            "Patch": 3,
+            "Minor": 0,
+            "Patch": 0,
             "Build": 0
         },
         "FileFlagsMask": "3f",
@@ -20,16 +20,16 @@
     },
     "StringFileInfo": {
         "Comments": "",
-        "CompanyName": "Tactical Techs",
-        "FileDescription": "Tactical RMM Agent",
+        "CompanyName": "TAB Business Networks",
+        "FileDescription": "TAB RMM Agent",
         "FileVersion": "v1.4.3.0",
         "InternalName": "tacticalrmm.exe",
-        "LegalCopyright": "Copyright (c) 2020 Tactical Techs",
+        "LegalCopyright": "Copyright (c) 2020 TAB Business Networks, INC",
         "LegalTrademarks": "",
         "OriginalFilename": "tacticalrmm.exe",
         "PrivateBuild": "",
-        "ProductName": "Tactical RMM Agent",
-        "ProductVersion": "v1.4.3.0",
+        "ProductName": "TAB RMM Agent",
+        "ProductVersion": "v1.0.0.0",
         "SpecialBuild": ""
     },
     "VarFileInfo": {

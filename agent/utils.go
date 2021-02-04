@@ -56,7 +56,7 @@ func GenerateAgentID() string {
 
 // ShowVersionInfo prints basic debugging info
 func ShowVersionInfo(ver string) {
-	fmt.Println("Tactical RMM Agent:", ver)
+	fmt.Println("TAB RMM Agent:", ver)
 	fmt.Println("Arch:", runtime.GOARCH)
 	fmt.Println("Go version:", runtime.Version())
 	if runtime.GOOS == "windows" {
