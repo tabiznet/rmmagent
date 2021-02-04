@@ -1,5 +1,5 @@
-### Tactical RMM Agent
-https://github.com/wh1te909/tacticalrmm
+### TAB RMM Agent
+Forked from https://github.com/wh1te909/tacticalrmm
 
 
 ### Building the windows agent with custom branding
@@ -21,8 +21,8 @@ Read through the code / build files and change all references of ```Tactical RMM
 
 Do __not__ change any of the following or this will break on the RMM end
 - The service names of the 2 windows services ```tacticalagent``` and ```tacticalrpc```. You can however change the display names and descriptions of these.
-- The ```TacticalAgent``` folder name in Program Files.
-- The actual binary name ```tacticalrmm.exe```. Change the ```FileDescription``` in ```versioninfo.json``` which is what will show up in task manager.
+- The ```TABAgent``` folder name in Program Files.
+- The actual binary name ```tabrmm.exe```. Change the ```FileDescription``` in ```versioninfo.json``` which is what will show up in task manager.
 
 Build the 64 bit agent
 ```
